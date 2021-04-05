@@ -8,10 +8,6 @@ export const ServiceProvider = list({
         name: text({ isRequired: true }),
         surname: text({ isRequired: true }),
         birth_date: text({ isRequired: true }),
-        languages: relationship({
-            ref: 'Language',
-            many: true,
-        }),
 
         work_places: relationship({
             ref: 'WorkPlace',
